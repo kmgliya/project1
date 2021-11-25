@@ -11,6 +11,11 @@ const routes = [
   // Always leave this as last one,
   // but you can also remove it
 {path: '/main',
-  component: () => import('../components/Main')}
-]
+  component: () => import('../components/Main')},
+  {
+    path: '/aboutus',
+    component: ()=> import('../components/AboutUs')
+  }
+  ];
+
 export default routes

@@ -2,27 +2,10 @@
   <div class="intro">
     <div class="video">
       <video class="video__media" src="../assets/new.mp4" autoplay muted loop></video>
-    </div>
-    <div class="intro__content">
-      <div class="container">
-        <img class="intro__img" src="../assets/logofinal.png" alt="">
+      <Header
+      style="position: fixed;z-index: 3"
 
-        <div>
-          <span>About Us</span>
-          <span>Our Doctors</span>
-          <span>Services</span>
-          <span>Fees</span>
-          <span>Education</span>
-          <span>Online Booking</span>
-          <span>Payments</span>
-          <span>Patient Portal</span>
-          <span>News</span>
-          <span>Contact Us</span>
-
-        </div>
-      </div>
-
-
+      />
     </div>
   </div>
     <section class="content">
@@ -179,6 +162,57 @@
           </div>
         </div>
 
+        <div class="final">
+          <div class="q-pa-md">
+            <q-parallax>
+              <template v-slot:media>
+                <img src="../assets/hall.jpg">
+              </template>
+
+              <template v-slot:content="scope">
+                <div
+                  class="absolute column items-center"
+                  :style="{
+            opacity: 0.45 + (1 - scope.percentScrolled) * 0.55,
+            top: (scope.percentScrolled * 60) + '%',
+            left: 0,
+            right: 0
+          }"
+                >
+                </div>
+              </template>
+            </q-parallax>
+          </div>
+
+          <div class="final__speech">
+            <div class="wrapper">
+              <!-- Контент -->
+              <a href="" class="wave-btn">
+                <span class="wave-btn__text">OUR doctors</span>
+                <span class="wave-btn__waves"></span>
+              </a>
+            </div>
+            <hr>
+            <div class="final__column">
+              <div class="final__column-first">
+                <p>“I had a great experience at WellOne Medical Centre. The staff at the reception desk were extremely friendly and polite! The clinic is beautiful and Dr G is fantastic! So excited to finally have a family doctor downtown! ”</p>
+                <span>— Paul Kozlowski - Google</span>
+              </div>
+              <div class="final__column-first">
+                <p>“Had a great experience here! From when I walked in, to when I left, everything was smooth sailing. Warm reception, professional and courteous care, wait time was reasonable as well. Wasn’t expecting to find a clinic this good in the heart of downtown.”</p>
+                <span>— Mike Taylor - Google</span>
+              </div>
+              <div class="final__column-first">
+                <p>“I had to see a doctor quickly and found WellOne walk-in clinic near me. The service I received from WellOne was great. The front desk staff were friendly, the doctor I saw was knowledgeable, she answered all my questions diligently and gave me a lot of useful information and a much needed prescription. ”</p>
+                <span>— Ljubica D - Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+<Footer/>
+
+
+
 
 
 
@@ -192,8 +226,14 @@
 </template>
 
 <script>
+  import Footer from "./Footer";
+  import Header from "./Header";
   export default {
-    name: "Main"
+    name: "Main",
+    components: {
+      Footer,
+      Header
+    }
   }
 </script>
 
