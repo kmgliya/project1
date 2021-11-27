@@ -4,7 +4,6 @@
       <video class="video__media" src="../assets/new.mp4" autoplay muted loop></video>
       <Header
       style="position: fixed;z-index: 3"
-
       />
     </div>
   </div>

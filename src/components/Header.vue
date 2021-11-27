@@ -1,10 +1,12 @@
 <template>
   <div class="intro__content">
     <div class="container">
-      <img class="intro__img" src="../assets/logofinal.png" alt="">
+      <router-link to="/main">
+        <img class="intro__img" src="../assets/logofinal.png" alt="">
+      </router-link>
       <div>
         <span @click="AboutUs">About Us</span>
-        <span>Our Doctors</span>
+        <span @click="OurDoctors">Our Doctors</span>
         <span>Services</span>
         <span>Fees</span>
         <span>Education</span>
@@ -13,10 +15,6 @@
         <span>Patient Portal</span>
         <span>News</span>
         <span>Contact Us</span>
-
-
-
-
       </div>
     </div>
 
@@ -30,7 +28,10 @@
       methods:{
          AboutUs(){
            this.$router.push("/aboutus")
-         }
+         },
+        OurDoctors(){
+           this.$router.push("/ourdoctors")
+        }
       }
     }
 </script>

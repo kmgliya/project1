@@ -18,7 +18,7 @@ body {
 
   &__main {
     padding: 100px 8%;
-    max-width: 960px;
+    max-width: 1350px;
     margin: 0 auto;
 
     &-title {
@@ -61,9 +61,10 @@ body {
       display: flex;
       margin-right: 30px;
       flex-direction: column;
+      width: 428px;
+      height: 228px;
 
       h2 {
-        display: flex;
         font-family: inherit;
         color: #f0dbb7;
         font-size: 23px;
@@ -71,18 +72,16 @@ body {
         text-align: center;
         margin-top: 15px;
         align-items: center;
-
       }
 
       p {
-        font-size: 14px;
-        line-height: 1.6em;
-        font-weight: 400;
-        font-style: italic;
-        letter-spacing: 0px;
-        text-decoration: none;
-        text-align: left;
-        margin: 0 0 1em;
+        color: white;
+        font-family: proxima-nova;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: .015em;
+        line-height: 1.8em;
       }
     }
   }
