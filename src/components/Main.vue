@@ -11,26 +11,24 @@
       <div class="content__same">
         <hr>
         <div class="content__same-title">
-          <p>SAME-DAY PHONE CONSULTS</p>
-          <span>BOOK ONLINE WITH DR. SIDI SALAMI</span>
+          <p>{{$t('Some')}}</p>
+          <span>{{$t('Book')}}</span>
         </div>
         <div class="additional">
           <div class="additional__img">
             <img class="additional__img-magazine" src="../assets/magazine.jpg" alt="">
           </div>
           <div class="wrapper">
-            <!-- Контент -->
             <a href="" class="wave-btn">
-              <span class="wave-btn__text"> BOOK ONLINE</span>
+              <span class="wave-btn__text">{{$t('Online')}}</span>
               <span class="wave-btn__waves"></span>
             </a>
           </div>
         </div>
         <hr>
         <div class="content__same-title">
-          <p>LOCATED IN THE HEART OF DOWNTOWN TORONTO</p>
-          <span>NORTHWEST CORNER OF YONGE & LAKESHORE
-1 BLOCK SOUTH OF UNION STATION</span>
+          <p>{{$t('Located')}}</p>
+          <span>{{$t('Northwest')}}</span>
         </div>
         <hr>
         <div class="map">
@@ -89,21 +87,20 @@
       <div class="appointments">
         <div class="appointments__text">
           <div class="appointments__text-title">
-            <p>BOOKED SAME DAY APPOINTMENTS AVAILABLE</p>
+            <p>{{$t('Appointment')}}</p>
           </div>
 
           <div>
             <div class="wrapper">
-              <!-- Контент -->
               <a href="" class="wave-btn">
-                <span class="wave-btn__text">OUR doctors</span>
+                <span class="wave-btn__text">{{$t('OurDoctor')}}</span>
                 <span class="wave-btn__waves"></span>
               </a>
             </div>
 
             <div class="wrapper">
               <a href="" class="wave-btn">
-                <span class="wave-btn__text">Book an appointment</span>
+                <span class="wave-btn__text">{{$t('BookAn')}}</span>
                 <span class="wave-btn__waves"></span>
               </a>
             </div>
@@ -141,19 +138,19 @@
               <img class="service__guts__img-img3" src="../assets/thing.jpg" alt="">
             </div>
             <div class="service__directions">
-              <p>SERVICES</p>
+              <p>{{$t('ServicesH')}}</p>
               <hr>
               <div class="service__directions__list">
                 <div class="service__directions__list-list1">
-                  <span>FAMILY MEDICINE</span>
-                  <span>BOOKED WALK-INS</span>
-                  <span>PEDIATRICS</span>
+                  <span>{{$t('FamilyM')}}</span>
+                  <span>{{$t('Walk')}}</span>
+                  <span>{{$t('Pediatrics')}}</span>
                 </div>
 
                 <div class="service__directions__list-list1">
-                  <span>TRAVEL MEDICINE</span>
-                  <span>WEIGHT MANAGEMENT</span>
-                  <span>PHYSIOTHERAPY</span>
+                  <span>{{$t('Travel')}}</span>
+                  <span>{{$t('Weight')}}</span>
+                  <span>{{$t('Physiotherapy')}}</span>
                 </div>
               </div>
 
@@ -185,24 +182,23 @@
 
           <div class="final__speech">
             <div class="wrapper">
-              <!-- Контент -->
               <a href="" class="wave-btn">
-                <span class="wave-btn__text">OUR doctors</span>
+                <span class="wave-btn__text">{{$t('wellOne')}}</span>
                 <span class="wave-btn__waves"></span>
               </a>
             </div>
             <hr>
             <div class="final__column">
               <div class="final__column-first">
-                <p>“I had a great experience at WellOne Medical Centre. The staff at the reception desk were extremely friendly and polite! The clinic is beautiful and Dr G is fantastic! So excited to finally have a family doctor downtown! ”</p>
+                <p>{{$t('Review')}}</p>
                 <span>— Paul Kozlowski - Google</span>
               </div>
               <div class="final__column-first">
-                <p>“Had a great experience here! From when I walked in, to when I left, everything was smooth sailing. Warm reception, professional and courteous care, wait time was reasonable as well. Wasn’t expecting to find a clinic this good in the heart of downtown.”</p>
+                <p>{{$t('Feedback')}}</p>
                 <span>— Mike Taylor - Google</span>
               </div>
               <div class="final__column-first">
-                <p>“I had to see a doctor quickly and found WellOne walk-in clinic near me. The service I received from WellOne was great. The front desk staff were friendly, the doctor I saw was knowledgeable, she answered all my questions diligently and gave me a lot of useful information and a much needed prescription. ”</p>
+                <p>{{$t('information')}}</p>
                 <span>— Ljubica D - Google</span>
               </div>
             </div>
@@ -237,8 +233,5 @@
 </script>
 
 <style scoped>
-  .q-parallax{
-    height: 1000px!important;
-  }
 
 </style>

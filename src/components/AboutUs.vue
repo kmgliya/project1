@@ -3,18 +3,18 @@
     <Header />
   <div class="about__main">
     <div class="about__main-title">
-      <h1>ABOUT WELLONE</h1>
+      <h1>{{$t('AboutW')}}</h1>
       <hr>
     </div>
 
     <div class="about__column">
       <div class="about__column-list">
-        <h2>OUR CLINIC</h2>
-        <p>WellOne Medical Centre is a large medical facility situated in the heart of downtown Toronto. Conveniently located near the financial district (including the First Canadian Place and the RBC Royal Bank Plaza), Union Station, Air Canada Centre and the Harbour Front, WellOne makes it easy to stay healthy without disrupting your daily routine.</p>
+        <h2>{{$t('OurClinic')}}</h2>
+        <p>{{$t('Routine')}}</p>
       </div>
       <div class="about__column-list">
-        <h2>OUR PHILOSOPHY</h2>
-        <p>Providing care that is respectful of and responsive to individual patient preferences, needs, and values, and ensuring that patient values guide all clinical decisions. At WellOne Medical Centre patient-centered care is one of the overreaching goals of health advocacy, in addition to greater patient involvement in healthcare delivery and design.</p>
+        <h2>{{$t('Philosophy')}}</h2>
+        <p>{{$t('Respect')}}</p>
       </div>
     </div>
 
@@ -23,9 +23,8 @@
   <div class="policies">
     <div class="policies__btn">
       <div class="wrapper">
-        <!-- Контент -->
         <a href="" class="wave-btn">
-          <span class="wave-btn__text">CLINIC POLICIES</span>
+          <span class="wave-btn__text">{{$t('Clinic')}}</span>
           <span class="wave-btn__waves"></span>
         </a>
       </div>

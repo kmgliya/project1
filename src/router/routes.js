@@ -20,7 +20,12 @@ const routes = [
   {
     path: '/ourdoctors',
     component: ()=> import('../components/OurDoctors')
+  },
+  {
+    path: '/contacts',
+    components: ()=> import('../components/Contacts')
   }
+
   ];
 
 export default routes

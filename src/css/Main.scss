@@ -2,6 +2,7 @@ $Rubik: 'Rubik Beastly';
 * {
   margin: 0;
   padding: 0;
+
 }
 
 html {
@@ -10,6 +11,7 @@ html {
 
 body {
 }
+
 
 .intro {
   max-height: 100vh;
@@ -41,7 +43,7 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-top: 15px;
@@ -199,8 +201,6 @@ body {
   align-items: center;
 
 }
-
-/* Основные стили */
 .wave-btn {
 
   width: 280px;
