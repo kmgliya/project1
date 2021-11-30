@@ -1,9 +1,11 @@
 <template>
-  <Header
-    style="position: fixed;z-index: 3"
-  />
  <div class="contacts">
-
+   <div class="video">
+     <video class="video__media" src="../assets/Hospital.mp4" autoplay muted loop></video>
+     <Header
+       style="position: fixed;z-index: 3"
+     />
+   </div>
    <div class="contacts__main">
      <div class="contacts__title">
        <h1>HOW TO GET HERE</h1>

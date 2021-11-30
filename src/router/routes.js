@@ -23,7 +23,7 @@ const routes = [
   },
   {
     path: '/contacts',
-    components: ()=> import('../components/Contacts')
+    component: ()=> import('../components/Contacts')
   }
 
   ];

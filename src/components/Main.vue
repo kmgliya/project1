@@ -31,9 +31,6 @@
           <span>{{$t('Northwest')}}</span>
         </div>
         <hr>
-        <div class="map">
-          <iframe class="map__near" src="https://www.google.com/maps/d/u/0/embed?mid=1BPzqllK1PHh6z2eBFakYewnxqBrquc1W" width="640" height="480"></iframe>
-        </div>
         <hr>
         <section class="info">
           <div class="info__card">
@@ -223,11 +220,13 @@
 <script>
   import Footer from "./Footer";
   import Header from "./Header";
+
+
   export default {
     name: "Main",
     components: {
       Footer,
-      Header
+      Header,
     }
   }
 </script>
