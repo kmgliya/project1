@@ -31,6 +31,18 @@
           <span>{{$t('Northwest')}}</span>
         </div>
         <hr>
+        <div class="map">
+          <GoogleMap
+            :styles="grey"
+            api-key="AIzaSyCi1aT6mir5DnV2Fgo-61NinHCirw_1jIQ"
+            style="width: 100%; height: 200px"
+            :center="center"
+            :zoom="15"
+          >
+            <Marker :options="{ position: center }" />
+          </GoogleMap>
+          <!--          <iframe class="map__near" src="https://www.google.com/maps/d/u/0/embed?mid=1BPzqllK1PHh6z2eBFakYewnxqBrquc1W" width="640" height="480"></iframe>-->
+        </div>
         <hr>
         <section class="info">
           <div class="info__card">
@@ -60,7 +72,7 @@
   <section class="cognition">
     <div class="parallax">
       <div>
-        <q-parallax>
+        <q-parallax :height="screenHeight">
           <template v-slot:media>
             <img src="../assets/Reception.jpg">
           </template>
@@ -105,8 +117,8 @@
         </div>
 
         <div class="parallax">
-          <div class="q-pa-md">
-            <q-parallax>
+          <div>
+            <q-parallax :height="screenHeight">
               <template v-slot:media>
                 <img src="../assets/examroom.jpg">
               </template>
@@ -119,6 +131,7 @@
             top: (scope.percentScrolled * 60) + '%',
             left: 0,
             right: 0
+
           }"
                 >
                 </div>
@@ -154,29 +167,28 @@
             </div>
           </div>
         </div>
+        <div>
+          <q-parallax :height="screenHeight">
+            <template v-slot:media>
+              <img src="../assets/hall.jpg">
+            </template>
 
-        <div class="final">
-          <div class="q-pa-md">
-            <q-parallax>
-              <template v-slot:media>
-                <img src="../assets/hall.jpg">
-              </template>
-
-              <template v-slot:content="scope">
-                <div
-                  class="absolute column items-center"
-                  :style="{
+            <template v-slot:content="scope">
+              <div
+                class="absolute column items-center"
+                :style="{
             opacity: 0.45 + (1 - scope.percentScrolled) * 0.55,
             top: (scope.percentScrolled * 60) + '%',
             left: 0,
             right: 0
-          }"
-                >
-                </div>
-              </template>
-            </q-parallax>
-          </div>
 
+          }"
+              >
+              </div>
+            </template>
+          </q-parallax>
+        </div>
+        <div class="final">
           <div class="final__speech">
             <div class="wrapper">
               <a href="" class="wave-btn">
@@ -220,13 +232,32 @@
 <script>
   import Footer from "./Footer";
   import Header from "./Header";
-
+  import { GoogleMap, Marker,grey } from 'vue3-google-map'
 
   export default {
     name: "Main",
     components: {
       Footer,
       Header,
+      GoogleMap,
+      Marker
+    },
+    data() {
+      return{
+        grey: grey,
+        center: {lat: 51.093048, lng: 6.842120},
+        markers: [
+          {
+            position: {
+              lat: 51.093048, lng: 6.842120
+            },
+          }
+          , // Along list of clusters
+        ]
+      }
+    },
+    computed:{
+      screenHeight: ()=> screen.height
     }
   }
 </script>

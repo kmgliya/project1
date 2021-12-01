@@ -29,8 +29,10 @@
         </a>
       </div>
     </div>
-    <hr>
-      <div class="q-pa-md">
+    <hr class="policies__line">
+      <div class="q-pa-md"
+           style="margin-left:395px;height: 950px;   width: 960px;
+    text-align: center;">
         <q-carousel
           animated
           v-model="slide"

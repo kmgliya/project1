@@ -89,15 +89,15 @@ body {
 
 .policies {
   &__btn {
-
-    hr{
+    padding-bottom: 48px;
+  }
+    &__line{
       color: white;
       width: 960px;
       height: 0;
       margin-top: 20px;
       margin-bottom: 30px;
-      margin-left: -113 px;
-
+      margin-left: 395px;
     }
-  }
+
 }
