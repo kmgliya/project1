@@ -1,0 +1,76 @@
+.services{
+  width: 100%;
+  background-color: #1f1f1f;
+  position: relative;
+  z-index: 50;
+  &__main {
+    background-color: #1f1f1f;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    color: white;
+    width: 960px;
+    height: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -125px;
+  }
+  &__title{
+    text-align: center;
+    white-space: pre-wrap;
+    h1{
+      font-family: futura-pt;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: 0.015em;
+      text-decoration: none;
+      line-height: 1.2em;
+      color: #bdbdbd;
+    }
+    p{
+      color: white;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 19px;
+      letter-spacing: 0.015em;
+      line-height: 1.8em;
+    }
+
+  }
+  &__faq{
+    h2{
+      text-align: center;
+      font-family: futura-pt;
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: 0.015em;
+      text-decoration: none;
+      line-height: 1.2em;
+      color: #f0dbb7;
+
+    }
+    &-text{
+      font-family: futura-pt;
+      color: #fff;
+      line-height: 1.6em;
+      font-style: normal;
+      font-size: 17px;
+      letter-spacing: .015em;
+      span{
+        font-family: inherit;
+        color: #f0dbb7;
+        font-size: 23px;
+        font-weight: bold;
+        line-height: .8em;
+      }
+    }
+  }
+}

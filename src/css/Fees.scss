@@ -1,0 +1,53 @@
+.fees{
+  background-color: #1f1f1f;
+  margin: 0 auto;
+  padding: 100px 8%;
+  &__main{
+
+  }
+  &__column{
+    display: flex;
+   justify-content: space-around;
+    text-align: center;
+    &-row{
+      width: 41%;
+    }
+  }
+  h1{
+    font-family: futura-pt;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: .015em;
+    text-decoration: none;
+    line-height: 1.2em;
+    color: #bdbdbd;
+
+  }
+  span{
+    font-family: proxima-nova;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: .015em;
+    text-decoration: none;
+    color: #bdbdbd;
+
+  }
+  p{
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    color: #bdbdbd;
+
+  }
+  &__poor{
+    position: relative;
+    top: 40px;
+    text-align: center;
+
+  }
+}

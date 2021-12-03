@@ -24,6 +24,22 @@ const routes = [
   {
     path: '/contacts',
     component: ()=> import('../components/Contacts')
+  },
+  {
+    path: '/services',
+    component: ()=> import('../components/Services')
+  },
+  {
+    path: '/news',
+    component: ()=> import('../components/News')
+  },
+  {
+    path: '/fees',
+    component: ()=> import('../components/Fees')
+  },
+  {
+    path: '/onlinebooking',
+    component: ()=> import('../components/OnlineBooking')
   }
 
   ];

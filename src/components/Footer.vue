@@ -11,18 +11,19 @@
       <div class="footer__main-contacts">
         <div class="footer__column">
           <div class="footer__column-first">
-            <p>LOCATION
-              <br>18 YONGE STREET
+            <span>LOCATION </span>
+            <p>18 YONGE STREET <br>
               TORONTO, ON M5E 1Z8</p>
 
           </div>
           <div class="footer__column-first">
-            <p>CONTACT <br>P:  647.748.5663
+            <span>CONTACT </span>
+            <p>P:  647.748.5663 <br>
               F:  647.740.7166</p>
           </div>
           <div class="footer__column-first">
-            <p>HOURS
-              <br>MONDAY — FRIDAY:
+            <span>HOURS </span>
+            <p>MONDAY — FRIDAY: <br>
               10AM - 6PM</p>
           </div>
         </div>

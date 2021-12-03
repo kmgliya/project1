@@ -7,13 +7,12 @@
       <div>
         <span @click="AboutUs">{{$t('About')}}</span>
         <span @click="OurDoctors">{{$t('Doctor')}}</span>
-        <span>{{$t('Services')}}</span>
-        <span>{{$t('Fees')}}</span>
-        <span>{{$t('Education')}}</span>
-        <span>{{$t('OnlineBook')}}</span>
+        <span @click="Services">{{$t('Services')}}</span>
+        <span @click="Fees">{{$t('Fees')}}</span>
+        <span @click="OnlineBooking">{{$t('OnlineBook')}}</span>
         <span>{{$t('Payments')}}</span>
         <span>{{$t('Patient')}}</span>
-        <span>{{$t('News')}}</span>
+        <span @click="News">{{$t('News')}}</span>
         <span @click="Contacts">{{$t('Contact')}}</span>
         <div class="q-pa-md">
           <div id="q-app">
@@ -55,21 +54,36 @@
       },
       methods:{
          AboutUs(){
-           this.$router.push("/aboutus")
-         },
+          this.$router.push("/aboutus")
+        },
         OurDoctors(){
            this.$router.push("/ourdoctors")
         },
         Contacts(){
           this.$router.push("/contacts")
         },
+        Services(){
+          this.$router.push("/services")
+        },
+        News(){
+          this.$router.push("/news")
+        },
+        Fees(){
+          this.$router.push("/fees")
+        },
+        OnlineBooking(){
+          this.$router.push("/onlinebooking")
+        },
         setLocale(lang){
           this.$i18n.locale = lang
-        }
+        },
+
       }
     }
 </script>
 
 <style scoped>
-
+.q-app{
+  width: 0%!important;
+}
 </style>

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+
+}
+
+body {
+}
+
+
+.main{
+  background-color: rgba(60,52,47,.9);
+  padding: 163px 0;
+  text-align: center;
+  color: #fff;
+
+  h1{
+    font-family: Josefin Sans;
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 1em;
+    text-decoration: none;
+    max-width: 100%;
+  }
+  span{
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+  }
+}
+
+.news{
+  background-color: #1f1f1f;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 8%;
+  &__title{
+    background-color: #1f1f1f;
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    h2{
+      text-align: center;
+      font-family: inherit;
+      color: #f0dbb7;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    h3{
+
+      font-family: inherit;
+      color: #f0dbb7;
+      font-size: 23px;
+    }
+    p{
+      color: white;
+      font-family: proxima-nova;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      letter-spacing: .015em;
+      line-height: 1.8em;
+    }
+    ul{
+      color: #ffffff;
+      font-family: proxima-nova;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 19px;
+      letter-spacing: .015em;
+      line-height: 1.8em;
+    }
+  }
+  &__covid{
+    margin-top: 50px;
+    display: flex;
+    &-text{
+      box-sizing: border-box;
+      width: 26%;
+      margin: 0 4% 0 0;
+      padding: 0;
+      h1{
+        color: #bdbdbd;
+        font-family: futura-pt;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 0.5em;
+        line-height: 1em;
+        font-style: normal;
+      }
+      span{
+        font-family: proxima-nova;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        color: white;
+      }
+    }
+
+  }
+}

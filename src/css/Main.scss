@@ -17,22 +17,7 @@ body {
   max-height: 100vh;
   overflow: hidden;
   position: relative;
-  background: url("../assets/mga.jpg") center no-repeat;
   background-size: cover;
-  cursor: pointer;
-}
-
-.intro:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 15%;
-  background-color: rgba(0, 0, 0,
-    .3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
   cursor: pointer;
 }
 
@@ -204,6 +189,7 @@ body {
   align-items: center;
 
 }
+
 .wave-btn {
 
   width: 280px;
@@ -561,13 +547,15 @@ body {
   position: relative;
 
   &__main {
-    max-width: 960px;
+    max-width: 1166px;
     margin: 0 auto;
     padding: 80px 8%;
 
     &-icons {
       margin-top: 60px;
+      position: relative;
       text-align: center;
+      bottom: 20px;
 
       &-icon1 {
         background: #171717;
@@ -589,11 +577,22 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 51px;
+    text-align: center;
 
     &-first {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      span{
+        display: flex;
+        font-family: inherit;
+        color: white;
+        font-size: 23px;
+        font-weight: bold;
+        position: relative;
+        left:49px;
+
+      }
 
       p {
         display: flex;
